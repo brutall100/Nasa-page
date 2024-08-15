@@ -82,7 +82,7 @@ document.addEventListener('DOMContentLoaded', () => {
             <input type="number" id="solInput" placeholder="SOL" />
             <button id="fetchMarsButton" type="button">Mars Photo</button>
         </div> 
-        <img src="./img/mars.png" alt="Default Mars Image" class="mars-image">
+        <img src="../img/mars.png" alt="Default Mars Image" class="mars-image">
     `;
 
     rightSection.innerHTML = `
