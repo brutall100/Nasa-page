@@ -6,7 +6,7 @@
 
 body {
     background-color: #484848;
-    background-image: url('/img/carbon_fibre.png');
+    background-image: url('./img/carbon_fibre.png');
     color: #333;
     font-size: 16px; /* Base font size for rem calculations */
     margin: 0;
@@ -23,7 +23,7 @@ body {
     background-color: #f0f0f0;
     border-radius: 0 0 1rem 1rem;
     margin: 0 2rem;
-    background-image: url('/img/ripples.png');
+    background-image: url('./img/ripples.png');
 }
 
 .apod-image-wrapper {
