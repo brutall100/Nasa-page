@@ -28,9 +28,11 @@ function fetchRandomMarsPhoto(sol) {
     fetch(`${marsRoverEndpoint}${sol}&page=1&api_key=${apiKey}`)
         .then(response => response.json())
         .then(data => {
+            console.log('Fetched Mars photos:', data);
             const photos = data.photos;
             if (photos.length > 0) {
                 const randomPhoto = photos[Math.floor(Math.random() * photos.length)];
+                console.log('Selected random photo:', randomPhoto);
                 updateImage('.left-section', randomPhoto.img_src, randomPhoto.earth_date, 'mars-image');
             } else {
                 updateImage('.left-section', '', 'No photos available for this date.', 'mars-image', true);
@@ -99,6 +101,7 @@ document.addEventListener('DOMContentLoaded', () => {
         fetchRandomSpacePhoto();
     });
 });
+
 
 
 // Made with ❤️ by GHAT GPT 
